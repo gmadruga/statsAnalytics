@@ -1,0 +1,15 @@
+﻿name;is_thermic;cooldown
+Only Imã;0;5
+V e i nominais;1;60
+V nominal e i*0 (Subcorrente);1;60
+V nominal e i*0.5 (Subcorrente);1;60
+V nominal e i*1.5 (Sobrecorrente);1;60
+V nominal e i*2 (Sobrecorrente);1;60
+V*0 e i nominal (Subtensão);1;60
+V*0 e i*0 (Subtensão e Subcorrente);1;60
+V*0 e i*2 (Subtensão e Sobrecorrente);1;60
+V*0.5 e i nominal (Subtensão);1;60
+V*1.5 e i nominal (Sobretensão);1;60
+V*2 e i nominal (Sobretensão);1;60
+V*2 e i*0 (Sobretensão e Subcorrente);1;60
+V*2 e i*2 (Sobretensão e Sobrecorrente);1;60

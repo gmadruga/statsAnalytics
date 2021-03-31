@@ -1,0 +1,9 @@
+﻿name;app_id;model;date;type;network
+SEC0001;eNFaF06nv_k;dow112 Dowertech;2020-10-26 12:56:09.187;Eletrônico;Monofásico
+SEC0002;eNFaF06nv_k;Elo 2101A;2020-10-26 15:26:19.910;Eletrônico;Monofásico
+SEC0003;eNFaF06nv_k;Dow110;2020-10-26 17:02:14.833;Eletrônico;Monofásico
+SEC0005;eNFaF06nv_k;Nansen Vector 3;2020-10-28 12:47:15.553;Eletrônico;Trifásico
+SEC0006;eNFaF06nv_k;FAE AP 3C;2020-10-28 14:26:17.033;Ciclométrico;Trifásico
+SEC0007;eNFaF06nv_k;Elster ET3DC1 30 A;2020-10-28 17:13:03.353;Ciclométrico;Trifásico
+SEC0008;eNFaF06nv_k;Actaris ass3c;2020-10-30 14:03:39.070;Ciclométrico;Trifásico
+SEC0009;eNFaF06nv_k;Landis Gyr E34 A;2020-10-30 15:36:41.820;Eletrônico;Trifásico
