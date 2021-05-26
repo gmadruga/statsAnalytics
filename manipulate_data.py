@@ -15,12 +15,12 @@ def stats_clean(df, column_list):
 
 def stats_generate(df):
     df_stats = []
-    df_stats.append(df['x'].mean(axis=0))
-    df_stats.append(df['y'].mean(axis=0))
-    df_stats.append(df['z'].mean(axis=0))
-    df_stats.append(df['x'].var(axis=0))
-    df_stats.append(df['y'].var(axis=0))
-    df_stats.append(df['z'].var(axis=0))
+    df_stats.append(df['X'].mean(axis=0))
+    df_stats.append(df['Y'].mean(axis=0))
+    df_stats.append(df['Z'].mean(axis=0))
+    df_stats.append(df['X'].var(axis=0))
+    df_stats.append(df['Y'].var(axis=0))
+    df_stats.append(df['Z'].var(axis=0))
 
     return df_stats
 
@@ -41,98 +41,7 @@ def std_analysis(df):
     # labels_2 = ['Ponteiro', 'Ciclometrico','Eletronico','Null']
     # sizes_2 = [ponteiro_size / total_size, ciclometrico_size / total_size, eletronico_size / total_size, else_size / total_size]
     # fig1, ax1 = plt.subplots()
-    # ax1.pie(sizes_1, labels=labels_1, autopct='%1.1f%%',
-    #         shadow=True, startangle=90)
-    # ax1.axis('equal')
-    # plt.savefig('medicoes/acerto_pizza.png')
-    # ax1.clear()
-    # fig2, ax1 = plt.subplots()
-    # ax1.pie(sizes_2, labels=labels_2, autopct='%1.1f%%',
-    #         shadow=True, startangle=90)
-    # ax1.axis('equal')
-    # plt.savefig('medicoes/tipo_pizza.png')
 
-
-    df_250_to_300 = df_splitter(df, 'X_var', 250, 300)
-    # df_1500_to_2000 = df_splitter(df, 'X_var', 1500, 2000)
-    # df_3000_to_4000 = df_splitter(df, 'X_var', 3000, 4000)
-    # df_4000 = df_splitter(df, 'X_var', min=1000)
-
-    # df_800_to_1000['index'] = range(len(df_800_to_1000))
-    #
-    # plot_scatter(df,
-    #              savename='scatter_800_1000',
-    #              axis_y=df_800_to_1000['index'],
-    #              axis_x=df_800_to_1000['X_var'],
-    #              title='Variancia no Eixo X entre 800 e 1000',
-    #              ylabel='Variancia',
-    #              xlabel='Medições',
-    #              scale='linear')
-    #
-    # plot_hist(df,
-    #           'hist_800_1000',
-    #           df_800_to_1000['X_var'],
-    #           title='Distribuição de valores entre 800 e 1000',
-    #           xlabel='Variancia')
-    #
-    # df_1500_to_2000['index'] = range(len(df_1500_to_2000))
-    #
-    # plot_scatter(df,
-    #              savename='scatter_1500_2000',
-    #              axis_y=df_1500_to_2000['index'],
-    #              axis_x=df_1500_to_2000['X_var'],
-    #              title='Variancia no Eixo X entre 1500 e 2000',
-    #              ylabel='Variancia',
-    #              xlabel='Medições',
-    #              scale='linear')
-    #
-    # plot_hist(df,
-    #           'hist_1500_2000',
-    #           df_1500_to_2000['X_var'],
-    #           title='Distribuição de valores entre 1500 e 2000',
-    #           xlabel='Variancia')
-    #
-
-    # df_3000_to_4000['index'] = range(len(df_3000_to_4000))
-    #
-    # plot_scatter(df,
-    #              savename='scatter_3000_4000',
-    #              axis_y=df_3000_to_4000['index'],
-    #              axis_x=df_3000_to_4000['X_var'],
-    #              title='Variancia no Eixo X entre 3000 e 4000',
-    #              ylabel='Variancia',
-    #              xlabel='Medições',
-    #              scale='linear')
-    #
-    # plot_hist(df,
-    #           'hist_3000_4000',
-    #           df_3000_to_4000['X_var'],
-    #           title='Distribuição de valores entre 3000 e 4000',
-    #           xlabel='Variancia')
-    #
-    # df_4000['index'] = range(len(df_4000))
-    #
-    # plot_scatter(df,
-    #              savename='scatter_4000',
-    #              axis_y=df_4000['index'],
-    #              axis_x=df_4000['X_var'],
-    #              title='Variancia no Eixo X maiores que 4000',
-    #              ylabel='Variancia',
-    #              xlabel='Medições',
-    #              scale='linear')
-    #
-    # plot_hist(df,
-    #           'hist_4000',
-    #           df_4000['X_var'],
-    #           title='Distribuição de valores maiores que 4000',
-    #           xlabel='Variancia',
-    #           bins=40)
-    #
-    #
-    list_1 = random.sample(range(17), 10)
-    list_4 = random.sample(range(62), 10)
-
-    list_5 = random.sample(range(len(df_250_to_300)), 10)
 
     return 'ok'
 
@@ -187,7 +96,7 @@ def plot_scatter(df, savename, axis_y, axis_x, title, ylabel='', xlabel='', scal
     if (len(stats) != 0):
         plt.title('Mean: ' + str(round(stats[0], 2)) + '     ' + 'Var: ' + str(round(stats[1], 2)))
     plt.suptitle(title)
-    plt.savefig('medicoes/'+str(df)+'/'+ str(savename) + '.png')
+    plt.savefig('medicoes/'+'/'+ str(savename) + '.png')
     ax.clear()
 
 

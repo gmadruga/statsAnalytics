@@ -10,6 +10,6 @@ def print_hi(name):
 if __name__ == '__main__':
     #run('readings/SECALL')
     #extract('readings/SEC0001/ef1fd0db-af7d-4e38-9133-010faf8a6178.magnet.json')
-    extract_csv('readings/eletr_magnetismo.csv','readings/eletr_instalacao.csv', 'readings/eletr_mobile_acertou.csv', 'readings/eletr_tipo_medidor.csv','final/listagem_sr.csv')
+    extract_csv('readings/sr_magnet_full.csv')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
